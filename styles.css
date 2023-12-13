@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 h1{
@@ -72,6 +73,7 @@ a{
 
 main,h2,h1, .extra{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 
 }
 
@@ -84,7 +86,7 @@ main,h2,h1, .extra{
 
 .foto img{
     border-radius: 14px;
-box-shadow: 0 2px 8px  gray;
+    box-shadow: 0 2px 8px  gray;
 }
 
 figure:hover{
@@ -99,4 +101,81 @@ img{
 
 .container {
     padding: 0 20px;
+}
+
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+ .box1 p {
+    padding: 0px 20px 0 20px;
+ }
+
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    
+}
+ .box2 p {
+    padding: 0px 20px 0 20px;
+    flex-wrap: wrap;
+ }
+
+ .box3{
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+ }
+
+ .box3 p{
+    display: flex;
+    justify-content: space-evenly;
+   border: 0;
+ }
+
+ .box3 img{
+    display: flex;
+    
+ }
+.box4{
+    margin: 0 100px 0 80px;
+    
+}
+ .box5{
+    margin: 0 80px 0 100px;
+
+ }
+
+
+
+ .omgekeerd{
+    display: flex;
+    flex-direction: row-reverse;
+ }
+
+footer{
+    background-color: #6c6c6c; 
+    padding: 20px 0;
+    width: 100vw;
+    
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    color: white;   
+}
+     
+.bronnen{
+    margin-top: 80px;
+}
+
+.bronvermelding{
+    display: flex;
 }
