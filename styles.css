@@ -14,33 +14,17 @@ h1{
 .titel{
     margin-top: 25vh;
 }
-   
-/*.gif{
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-}
-*/
+ 
+
 .nav{
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
     list-style: none;
-
     background-color: #333; 
     margin: 0;
     padding: 0;
     width: 100vw;
-    
 }
 
 .nav a{
@@ -51,6 +35,8 @@ h1{
     padding: 14px 16px; 
     text-decoration: none;
     transition: all 250ms ease;
+
+
 }
 
 .nav a:hover {
@@ -73,8 +59,12 @@ a{
 
 main,h2,h1, .extra{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 
+}
+
+
+p{
+    font-family: 'Montserrat', sans-serif;
 }
 
 .foto{
@@ -95,12 +85,39 @@ transition: ease 250ms;
 }
 
 
-img{
+.afbeelding{
     border-radius: 14px;
-} /*Opletten dat dit (voor nu) ALLE fotos's zijn */
+} 
 
 .container {
     padding: 0 20px;
+}
+
+.overlandtekst{
+    display: flex;
+    flex-direction: column;
+}
+.tekstzijkant{
+    margin-right: 20px;
+}
+
+.kaart{
+    margin-left: 80px;
+    margin-right: 80px;
+    animation: slidefromright 750ms ease-out;
+}
+
+@keyframes slidefromright {
+    0%{
+        transform: translateX(40%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.tekstmetkaart{
+    display: flex;
 }
 
 
@@ -111,8 +128,24 @@ img{
 }
  .box1 p {
     padding: 0px 20px 0 20px;
+    margin-right: 40vw;
  }
 
+.box1 {
+    animation: invoegen 750ms ease-out;
+    
+}
+
+
+
+@keyframes invoegen {
+    0%{
+        transform: translateX(-20%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
 
 .box2 {
     display: flex;
@@ -122,25 +155,53 @@ img{
 }
  .box2 p {
     padding: 0px 20px 0 20px;
-    flex-wrap: wrap;
+    margin-left: 40vw;
  }
+
+.box2{
+    animation: uitvoegen 750ms ease-out  ;
+}
+
+@keyframes uitvoegen {
+    0%{
+        transform: translateX(20%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
 
  .box3{
     display: flex;
     justify-content: space-between;
     border: 0;
+    animation: vergroten 750ms ease-out;
+ }
+
+ @keyframes vergroten {
+    0%{
+        transform: scale(50%);
+    }
+    100%{
+        transform: scale(100%);
+    }
  }
 
  .box3 p{
     display: flex;
     justify-content: space-evenly;
-   border: 0;
+    border: 0;
  }
 
  .box3 img{
     display: flex;
     
  }
+
+ .meerruimte{
+    margin-left: 28px;
+ }
+
 .box4{
     margin: 0 100px 0 80px;
     
@@ -150,15 +211,13 @@ img{
 
  }
 
-
-
  .omgekeerd{
     display: flex;
     flex-direction: row-reverse;
  }
 
 footer{
-    background-color: #6c6c6c; 
+    background-color: #979797; 
     padding: 20px 0;
     width: 100vw;
     
@@ -169,7 +228,13 @@ footer ul{
 }
 
 footer a{
-    color: white;   
+    color: white;  
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer h2{
+    margin-left: 10px;
+    color: white;  
 }
      
 .bronnen{
