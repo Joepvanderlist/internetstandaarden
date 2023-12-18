@@ -230,7 +230,13 @@ footer ul{
 footer a{
     color: white;  
     font-family: 'Montserrat', sans-serif;
+    transition: all 250ms ease;
 }
+
+footer a:hover{
+    color: dimgrey;
+}
+
 
 footer h2{
     margin-left: 10px;
