@@ -180,10 +180,10 @@ transition: ease 250ms;
 
  @keyframes vergroten {
     0%{
-        transform: scale(50%);
+        transform: scale(0.5);
     }
     100%{
-        transform: scale(100%);
+        transform: scale(1);
     }
  }
 
